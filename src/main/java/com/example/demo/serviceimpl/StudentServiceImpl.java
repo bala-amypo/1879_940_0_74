@@ -1,7 +1,7 @@
-package com.example.demo.Serviceimpl;
+package com.example.demo.serviceimpl;
 
 import com.example.demo.service.StudentService;
 
 public class StudentServiceImple implements StudentService {
-
+    
 }
