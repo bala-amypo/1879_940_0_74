@@ -26,7 +26,6 @@ public class Student {
     @Column(unique = true)
     private String email;
 
-    // Constructors
     public Student() {
     }
 
@@ -36,7 +35,6 @@ public class Student {
         this.email = email;
     }
 
-    // Getters & Setters
     public long getId() {
         return id;
     }
