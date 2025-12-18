@@ -6,6 +6,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Email;
+
+
 // import jakarta.persistence.Table;
 @Entity
 // @Table(name="StudentTable")
@@ -13,7 +17,9 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @NotBlank(message="Name filed cannot be empty")
     private String name;
+    @Email(message="Invalid email id");
     private String email;
     public long getId() {
         return id;
