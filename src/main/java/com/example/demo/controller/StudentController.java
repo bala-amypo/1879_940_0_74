@@ -11,12 +11,7 @@ import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.requestMapping;
-
-
-
-
-
+import org.springframework.web.bind.annotation.RequestMapping;
 import jakarta.validation.Valid;
 
 @RestController
