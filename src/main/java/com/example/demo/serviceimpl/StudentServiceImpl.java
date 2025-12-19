@@ -25,7 +25,11 @@ public class StudentServiceImpl implements StudentService {
         Student exits=getStudentById(id);
         exits.setName(student.getName());
         exits.setEmail(student.getEmail());
-        return studentRepository.save(exits)
-        .orElseThrow(()-> new ResourceNotFoundException("Invalid Email"));
+        return studentRepository.save(exits);
+        // .orElseThrow(()-> new ResourceNotFoundException("Invalid Email"));
+    }
+    public Student deletedata(Long id){
+        Student student=getStudentById(id);
+        studentRepository.delete(student);
     }
 }

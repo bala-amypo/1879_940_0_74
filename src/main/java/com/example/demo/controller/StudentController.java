@@ -42,7 +42,8 @@ public class StudentController {
     return studentService.updatedata(id,student);
     }
 
-    @DeleteMapping("/deletedata/{}")
+    @DeleteMapping("/deletedata/{id}")
+    public Response 
 
 
 }
