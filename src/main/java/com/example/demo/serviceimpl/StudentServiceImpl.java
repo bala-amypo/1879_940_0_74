@@ -23,6 +23,8 @@ public class StudentServiceImpl implements StudentService {
     }
     public Student updatedata(Long id, Student student){
         Student exits=getStudentById(id);
-        exits.setName()
+        exits.setName(student.getName());
+        exits.setEmail(student.setEmail());
+        return studentRepository.save()
     }
 }
