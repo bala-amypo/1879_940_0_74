@@ -9,5 +9,6 @@ public interface StudentService {
     
     Student saveStudent(Student student);// Creating object for saving student details and class
     Student getStudentById(Long id);
-    Student     
+    Student deletedata(Long id);
+    Student updatedata(Long id, Student student);    
 }

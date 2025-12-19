@@ -43,7 +43,7 @@ public class StudentController {
     }
 
     @DeleteMapping("/deletedata/{id}")
-    public Response 
+    public ResponseEntity<String> deletedata(@PathVariable Long id
 
 
 }
