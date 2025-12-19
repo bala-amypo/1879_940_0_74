@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.PutMapping;
+
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
@@ -32,5 +34,9 @@ public class StudentController {
     public Student getdata(@PathVariable Long id){
         return studentService.getStudentById(id);
     }
+
+    @PutMappinig("/updatedata"{id})
+    public 
+
 
 }
