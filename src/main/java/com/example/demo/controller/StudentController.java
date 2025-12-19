@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
+
 
 
 import com.example.demo.entity.Student;
@@ -36,7 +38,11 @@ public class StudentController {
     }
 
     @PutMappinig("/updatedata"{id})
-    public 
+    public Student updatedStudent(@PathVariable Long id, @Valid @RequestBody Student student){
+    return studentService.updatedata(id,student);
+    }
+
+    @DeleteMapping("/deletedata/{}")
 
 
 }
