@@ -44,7 +44,8 @@ public class StudentController {
 
     @DeleteMapping("/deletedata/{id}")
     public ResponseEntity<String> deletedata(@PathVariable Long id){
-    
+    return studentService.deletedata(id);
+    }
 
 
 }
