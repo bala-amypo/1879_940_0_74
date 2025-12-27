@@ -1,6 +1,11 @@
 package com.example.demo.security;
 
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import io.jsonwebtoken.JwtException;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
 import java.util.Date;
 
 public class JwtUtil {
@@ -24,7 +29,7 @@ public class JwtUtil {
                 .compact();
     }
 
-    public Jws<Claims> validateToken(String token) {
+    public Jws<Claims> validateToken(String token) throws JwtException {
         return Jwts.parser()
                 .setSigningKey(secret)
                 .parseClaimsJws(token);
